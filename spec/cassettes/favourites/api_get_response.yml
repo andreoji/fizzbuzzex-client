@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:4000/oauth/token?client_id=a2de6982055a1eb696c6c2b6c1040520a5ef4bddd46d25bc7b62a54f12bf5605&client_secret=8bda6b7c9300fccc7ec236c8c89ca5c02930a11e9b8e67f80e500c390194ac94&grant_type=password&password=j123456l&username=johnl
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin18.7.0 x86_64) ruby/2.7.0p0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - localhost:4000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '190'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 28 Sep 2020 13:38:49 GMT
+      Server:
+      - Cowboy
+      X-Request-Id:
+      - Fjj2KjHjgUBx-rEAANxB
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"38912afdab16d9c8455545e00fef1612c922c72c480ddae88fc9cc5dc958d8bc","created_at":"2020-09-28T13:11:38","expires_in":7200,"refresh_token":null,"scope":"","token_type":"bearer"}'
+    http_version:
+  recorded_at: Mon, 28 Sep 2020 13:38:49 GMT
+- request:
+    method: get
+    uri: http://localhost:4000/api/v1/favourites?page%5Bnumber%5D=6666666666&page%5Bsize%5D=15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.api+json
+      User-Agent:
+      - rest-client/2.1.0 (darwin18.7.0 x86_64) ruby/2.7.0p0
+      Authorization:
+      - Bearer 38912afdab16d9c8455545e00fef1612c922c72c480ddae88fc9cc5dc958d8bc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - localhost:4000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '1885'
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Mon, 28 Sep 2020 13:38:49 GMT
+      Server:
+      - Cowboy
+      X-Request-Id:
+      - Fjj2Kla-hIhyDgAAACWC
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"attributes":{"fizzbuzz":"99999999976","number":99999999976,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999977","number":99999999977,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"fizz","number":99999999978,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999979","number":99999999979,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"buzz","number":99999999980,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"fizz","number":99999999981,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999982","number":99999999982,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999983","number":99999999983,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"fizz","number":99999999984,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"buzz","number":99999999985,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999986","number":99999999986,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"fizz","number":99999999987,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999988","number":99999999988,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999989","number":99999999989,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"fizzbuzz","number":99999999990,"state":false},"id":"","type":"favourite"}],"jsonapi":{"version":"1.0"},"links":{"first":"/api/v1/favourites?page[number]=1&page[size]=15","last":"/api/v1/favourites?page[number]=6666666667&page[size]=15","next":"/api/v1/favourites?page[number]=6666666667&page[size]=15","prev":"/api/v1/favourites?page[number]=6666666665&page[size]=15","self":"/api/v1/favourites?page[number]=6666666666&page[size]=15"}}'
+    http_version:
+  recorded_at: Mon, 28 Sep 2020 13:38:49 GMT
+- request:
+    method: get
+    uri: http://localhost:4000/api/v1/favourites?page%5Bnumber%5D=6666666667&page%5Bsize%5D=15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.api+json
+      User-Agent:
+      - rest-client/2.1.0 (darwin18.7.0 x86_64) ruby/2.7.0p0
+      Authorization:
+      - Bearer 38912afdab16d9c8455545e00fef1612c922c72c480ddae88fc9cc5dc958d8bc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - localhost:4000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '1244'
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Mon, 28 Sep 2020 13:38:49 GMT
+      Server:
+      - Cowboy
+      X-Request-Id:
+      - Fjj2Klfo24iKSb0AANxh
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"attributes":{"fizzbuzz":"99999999991","number":99999999991,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999992","number":99999999992,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"fizz","number":99999999993,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999994","number":99999999994,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"buzz","number":99999999995,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"fizz","number":99999999996,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999997","number":99999999997,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"99999999998","number":99999999998,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"fizz","number":99999999999,"state":false},"id":"","type":"favourite"},{"attributes":{"fizzbuzz":"buzz","number":100000000000,"state":false},"id":"","type":"favourite"}],"jsonapi":{"version":"1.0"},"links":{"first":"/api/v1/favourites?page[number]=1&page[size]=15","prev":"/api/v1/favourites?page[number]=6666666666&page[size]=15","self":"/api/v1/favourites?page[number]=6666666667&page[size]=15"}}'
+    http_version:
+  recorded_at: Mon, 28 Sep 2020 13:38:49 GMT
+recorded_with: VCR 3.0.3
