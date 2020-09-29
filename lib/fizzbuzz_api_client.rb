@@ -38,8 +38,7 @@ class FizzbuzzApiClient
     headers['Authorization'] = "Bearer #{access_token}"
     headers['Content-type'] = 'application/vnd.api+json'
     response = RestClient.post("#{base_url}/#{resource_path}", payload(options), headers)
-    body = response_json(response)
-    { status_code: response.code, data: body[:data] }
+    show_post_response(response)
   end
 
   private
@@ -88,6 +87,13 @@ class FizzbuzzApiClient
 
   def show_body(body)
     data(body).each { |_k, v| puts v }
+  end
+
+  def show_post_response(response)
+    body = response_json(response)
+    output = { status_code: response.code, data: body[:data] }
+    puts output
+    output
   end
 
   attr_reader :client_id, :client_secret, :name, :password, :base_url, :resource_path, :oauth2_base_url, :headers,
