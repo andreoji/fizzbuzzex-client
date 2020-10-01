@@ -10,9 +10,11 @@ Clone the Fizzbuzzex API client repo.
 
 ### Bundler
 
-```sh
-bundle install
-```
+`bundle install`
+
+### Run the tests
+
+`rspec spec/fizzbuzz_api_client_spec.rb`
 
 ## Description
 
