@@ -1,5 +1,9 @@
 # Fizzbuzzex API Client
 
+## Prerequisites
+
+You will have to have a running Fizzbuzzex server and obtained the oauth2 credentials `client_id` and `client_secret` to use this app.
+
 ## Installation
 
 Clone the Fizzbuzzex API client repo.
