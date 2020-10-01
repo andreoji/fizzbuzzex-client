@@ -19,10 +19,10 @@ bundle install
 This app fullfils the requirement to consume the Fizzbuzzex API. It is written in Ruby and primarily uses the Thor gem.
 It has two modes of operation depending on the command line arguments passed.
 
-### Fizzbuzz
+### Fizzbuzz mode
 
 In this mode the app will recursively call the next page of API numbers ad infinitum, until the last page of numbers has been reached.
-For each page of numbers it prints first number, last number and the next page pointer.
+For each page of numbers it prints the first and last numbers, and the next page pointer.
 
 Running from first page when page size is 15:
 
@@ -81,7 +81,7 @@ It merely follows links, until it has nothing else to do, or it is stopped with:
 ctrl-c
 ```
 
-### Favourite
+### Favourite mode
 
 This mode allows the favouriting / unfavouriting of a number.
 
