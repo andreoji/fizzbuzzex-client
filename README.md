@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-You will have to have a running Fizzbuzzex server and have obtained an oauth2 app's `client_id` and `client_secret` to use Fizzbuzzex-client.
+You'll need a running Fizzbuzzex server and an oauth2 app's `client_id` and `client_secret` to use Fizzbuzzex-client.
 
 ## Installation
 
